@@ -1,2 +1,2 @@
-# tim-drevitch-portfolio
+# Tim Drevitch Portfolio
 My portfolio
