@@ -1,4 +1,5 @@
 import { FC } from "react"
+import { BsInfoCircleFill } from "react-icons/bs"
 
 const App: FC = (): JSX.Element => {
   return (
@@ -17,7 +18,9 @@ const App: FC = (): JSX.Element => {
         <h3>Software Engineer</h3> */}
       </div>
       <div style={{ gridColumn: "3 / 9" }}>
-        <h1>Technologies</h1>
+        <h1>
+          Technologies <BsInfoCircleFill />
+        </h1>
         <div style={{ display: "flex", flexWrap: "wrap" }}>
           <div
             style={{
