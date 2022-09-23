@@ -15,17 +15,40 @@ const shakeAnimation = keyframes`
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 `
 
-export const MainHeaderContainer = styled.div`
-  grid-column: "3/9";
-  border-bottom: "1px solid white";
+export const MainContentContainer = styled.div`
+  width: 75%;
   @media (max-width: 950px) {
-    grid-column: "2/9";
+    width: 95%;
   }
 `
 
-export const MainContentContainer = styled.div`
-  grid-column: "3/9";
-  @media (max-width: 950px) {
-    grid-column: "2/10";
-  }
+export const SmallItem = styled.div`
+  width: 6rem;
+  height: 6rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  /* @media (max-width: 950px) {
+    width: 95%;
+  } */
+`
+export const LargeItem = styled.div`
+  width: 14rem;
+  height: 6rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  /* @media (max-width: 950px) {
+    width: 95%;
+  } */
+`
+export const Details = styled.details`
+  margin-bottom: 0.25rem;
+`
+export const Description = styled.h6`
+  margin-top: -1em;
 `
