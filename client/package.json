@@ -2,6 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://timdrevitch.github.io/tim-drevitch-portfolio",
   "dependencies": {
     "@react-oauth/google": "^0.2.8",
     "@types/jest": "^29.0.3",
@@ -13,6 +14,7 @@
     "@types/styled-components": "^5.1.26",
     "axios": "^0.27.2",
     "dotenv": "^16.0.2",
+    "gh-pages": "^4.0.0",
     "icons": "^1.0.0",
     "jwt-decode": "^3.1.2",
     "lodash": "^4.17.21",
@@ -29,6 +31,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

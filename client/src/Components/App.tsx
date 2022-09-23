@@ -1,7 +1,9 @@
-import { FC } from "react"
+import { CSSProperties, FC } from "react"
 import { BsInfoCircleFill } from "react-icons/bs"
 
 const App: FC = (): JSX.Element => {
+  const middle: CSSProperties = { verticalAlign: "middle" }
+
   return (
     <div
       style={{
@@ -19,7 +21,7 @@ const App: FC = (): JSX.Element => {
       </div>
       <div style={{ gridColumn: "3 / 9" }}>
         <h1>
-          Technologies <BsInfoCircleFill />
+          Technologies <BsInfoCircleFill style={middle} />
         </h1>
         <div style={{ display: "flex", flexWrap: "wrap" }}>
           <div
