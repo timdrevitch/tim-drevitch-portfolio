@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/tim-drevitch-portfolio/static/css/main.59eb88ac.css",
+    "main.js": "/tim-drevitch-portfolio/static/js/main.38740348.js",
+    "index.html": "/tim-drevitch-portfolio/index.html",
+    "main.59eb88ac.css.map": "/tim-drevitch-portfolio/static/css/main.59eb88ac.css.map",
+    "main.38740348.js.map": "/tim-drevitch-portfolio/static/js/main.38740348.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.59eb88ac.css",
+    "static/js/main.38740348.js"
+  ]
+}
