@@ -1,5 +1,6 @@
 import { CSSProperties, FC } from "react"
 import { BsInfoCircleFill } from "react-icons/bs"
+import { MainContentContainer, MainHeaderContainer } from "../Styles/HomeStyles"
 
 const App: FC = (): JSX.Element => {
   const middle: CSSProperties = { verticalAlign: "middle" }
@@ -11,15 +12,15 @@ const App: FC = (): JSX.Element => {
         gridTemplateColumns: "10% 10% 10% 10% 10% 10% 10% 10% 10% 10%",
       }}
     >
-      <div style={{ gridColumn: "3/9", borderBottom: "1px solid white" }}>
+      <MainHeaderContainer>
         <h1 style={{ fontSize: "72px" }}>Tim Drevitch</h1>
         <h1 style={{ margin: "-2.5rem 0 3rem 0" }}>Software Engineer</h1>
-      </div>
+      </MainHeaderContainer>
       <div style={{ gridColumn: "1 / 3", padding: "1rem" }}>
         {/* <h1>Technologies</h1>
         <h3>Software Engineer</h3> */}
       </div>
-      <div style={{ gridColumn: "3 / 9" }}>
+      <MainContentContainer>
         <h1>
           Technologies <BsInfoCircleFill style={middle} />
         </h1>
@@ -411,7 +412,7 @@ const App: FC = (): JSX.Element => {
             <h6>Description</h6>
           </div>
         </div>
-      </div>
+      </MainContentContainer>
       <div style={{ gridColumn: "9 / 11", textAlign: "center" }}>
         {/* <h1>Contact Me</h1>
         <h3>Contact Form</h3> */}
