@@ -15,13 +15,18 @@ const shakeAnimation = keyframes`
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 `
 
+export const WebsiteContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  background: red;
+  justify-content: center;
+`
 export const MainContentContainer = styled.div`
   width: 75%;
   @media (max-width: 950px) {
     width: 95%;
   }
 `
-
 export const SmallItem = styled.div`
   width: 6rem;
   height: 6rem;

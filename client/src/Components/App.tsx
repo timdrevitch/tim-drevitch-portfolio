@@ -6,19 +6,14 @@ import {
   LargeItem,
   MainContentContainer,
   SmallItem,
+  WebsiteContainer,
 } from "../Styles/HomeStyles"
 
 const App: FC = (): JSX.Element => {
   const middle: CSSProperties = { verticalAlign: "middle" }
 
   return (
-    <div
-      style={{
-        display: "flex",
-        flexWrap: "wrap",
-        justifyContent: "center",
-      }}
-    >
+    <WebsiteContainer>
       <MainContentContainer>
         <h1 style={{ fontSize: "72px" }}>Tim Drevitch</h1>
         <h1
@@ -190,7 +185,7 @@ const App: FC = (): JSX.Element => {
           </div>
         </Details>
       </MainContentContainer>
-    </div>
+    </WebsiteContainer>
   )
 }
 
