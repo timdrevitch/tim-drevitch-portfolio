@@ -18,7 +18,6 @@ const shakeAnimation = keyframes`
 export const WebsiteContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  background: red;
   justify-content: center;
 `
 export const MainContentContainer = styled.div`
