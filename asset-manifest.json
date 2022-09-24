@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/tim-drevitch-portfolio/static/css/main.59eb88ac.css",
-    "main.js": "/tim-drevitch-portfolio/static/js/main.541a0ba0.js",
+    "main.css": "/tim-drevitch-portfolio/static/css/main.d3a521dd.css",
+    "main.js": "/tim-drevitch-portfolio/static/js/main.a076b5fe.js",
     "static/media/tdnavlogo.png": "/tim-drevitch-portfolio/static/media/tdnavlogo.ffae68a8304c7a826ddf.png",
+    "static/media/styledcomponents.png": "/tim-drevitch-portfolio/static/media/styledcomponents.f339b2d4eb9e1868b700.png",
     "index.html": "/tim-drevitch-portfolio/index.html",
-    "main.59eb88ac.css.map": "/tim-drevitch-portfolio/static/css/main.59eb88ac.css.map",
-    "main.541a0ba0.js.map": "/tim-drevitch-portfolio/static/js/main.541a0ba0.js.map"
+    "main.d3a521dd.css.map": "/tim-drevitch-portfolio/static/css/main.d3a521dd.css.map",
+    "main.a076b5fe.js.map": "/tim-drevitch-portfolio/static/js/main.a076b5fe.js.map"
   },
   "entrypoints": [
-    "static/css/main.59eb88ac.css",
-    "static/js/main.541a0ba0.js"
+    "static/css/main.d3a521dd.css",
+    "static/js/main.a076b5fe.js"
   ]
 }
