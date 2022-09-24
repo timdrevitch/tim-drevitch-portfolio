@@ -22,6 +22,7 @@ export const WebsiteContainer = styled.div`
 `
 export const MainContentContainer = styled.div`
   width: 75%;
+  margin-top: 10rem;
   @media (max-width: 950px) {
     width: 95%;
   }
