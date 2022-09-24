@@ -1,5 +1,5 @@
 import { CSSProperties, FC } from "react"
-import { BsInfoCircleFill } from "react-icons/bs"
+// import { BsInfoCircleFill } from "react-icons/bs"
 import {
   Description,
   Details,
@@ -10,7 +10,7 @@ import {
 } from "../Styles/HomeStyles"
 
 const Home: FC = (): JSX.Element => {
-  const middle: CSSProperties = { verticalAlign: "middle" }
+  //   const middle: CSSProperties = { verticalAlign: "middle" }
 
   return (
     <WebsiteContainer>
@@ -28,7 +28,8 @@ const Home: FC = (): JSX.Element => {
         <Details>
           <summary style={{ cursor: "pointer" }}>
             {" "}
-            Technologies <BsInfoCircleFill style={middle} />
+            Technologies
+            {/* <BsInfoCircleFill style={middle} /> */}
           </summary>
           <div
             style={{ display: "flex", flexWrap: "wrap", paddingTop: "2rem" }}
@@ -87,7 +88,8 @@ const Home: FC = (): JSX.Element => {
         <Details>
           <summary style={{ cursor: "pointer" }}>
             {" "}
-            Languages <BsInfoCircleFill style={middle} />
+            Languages
+            {/* <BsInfoCircleFill style={middle} /> */}
           </summary>
           <div
             style={{ display: "flex", flexWrap: "wrap", paddingTop: "2rem" }}
@@ -138,7 +140,8 @@ const Home: FC = (): JSX.Element => {
         <Details>
           <summary style={{ cursor: "pointer" }}>
             {" "}
-            Full-Stack Portfolio Projects <BsInfoCircleFill style={middle} />
+            Full-Stack Portfolio Projects
+            {/* <BsInfoCircleFill style={middle} /> */}
           </summary>
           <div
             style={{ display: "flex", flexWrap: "wrap", paddingTop: "2rem" }}
@@ -165,7 +168,8 @@ const Home: FC = (): JSX.Element => {
         <Details>
           <summary style={{ cursor: "pointer" }}>
             {" "}
-            Frontend-Only Portfolio Projects <BsInfoCircleFill style={middle} />
+            Frontend-Only Portfolio Projects
+            {/* <BsInfoCircleFill style={middle} /> */}
           </summary>
           <div
             style={{ display: "flex", flexWrap: "wrap", paddingTop: "2rem" }}

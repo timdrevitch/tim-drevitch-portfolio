@@ -1,12 +1,14 @@
 import { FC } from "react"
+import { NavigateFunction, useNavigate } from "react-router-dom"
 import {
   MainNavContentContainer,
+  NavigationButton,
   NavigationImg,
-  NavigationLink,
   WebsiteNavContainer,
 } from "../../Styles/NavbarStyles"
 
 const Navbar: FC = (): JSX.Element => {
+  const navigate: NavigateFunction = useNavigate()
   return (
     <WebsiteNavContainer>
       <MainNavContentContainer>
@@ -21,9 +23,21 @@ const Navbar: FC = (): JSX.Element => {
             verticalAlign: "middle",
           }}
         >
-          <NavigationLink>Home</NavigationLink>
-          <NavigationLink>Resume</NavigationLink>
-          <NavigationLink>Contact</NavigationLink>
+          <NavigationButton
+            onClick={() => navigate("/tim-drevitch-portfolio/")}
+          >
+            Home
+          </NavigationButton>
+          <NavigationButton
+            onClick={() => navigate("/tim-drevitch-portfolio/resume")}
+          >
+            Resume
+          </NavigationButton>
+          <NavigationButton
+            onClick={() => navigate("/tim-drevitch-portfolio/contact")}
+          >
+            Contact
+          </NavigationButton>
         </div>
       </MainNavContentContainer>
     </WebsiteNavContainer>

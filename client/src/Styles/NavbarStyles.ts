@@ -35,7 +35,7 @@ export const NavigationImg = styled.img`
   display: inline;
   vertical-align: center;
 `
-export const NavigationLink = styled.button`
+export const NavigationButton = styled.button`
   background: none;
   border: none;
   margin-left: 2rem;
