@@ -21,6 +21,7 @@ export const WebsiteNavContainer = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+  background: #1a1d22 50%;
 `
 export const MainNavContentContainer = styled.div`
   width: 75%;
@@ -45,5 +46,6 @@ export const NavigationButton = styled.button`
   cursor: pointer;
   &:hover {
     text-decoration: underline;
+    color: #f7c59f;
   }
 `

@@ -30,7 +30,7 @@ export const MainContentContainer = styled.div`
 export const SmallItem = styled.div`
   width: 6rem;
   height: 6rem;
-  border: 1px solid white;
+  border: 1px solid #f7c59f;
   border-radius: 5px;
   padding: 5px;
   margin-right: 2rem;
@@ -42,7 +42,7 @@ export const SmallItem = styled.div`
 export const LargeItem = styled.div`
   width: 14rem;
   height: 6rem;
-  border: 1px solid white;
+  border: 1px solid #f7c59f;
   border-radius: 5px;
   padding: 5px;
   margin-right: 2rem;
@@ -56,4 +56,15 @@ export const Details = styled.details`
 `
 export const Description = styled.h6`
   margin-top: -1em;
+`
+export const IconContainer = styled.div`
+  width: 100%;
+  text-align: center;
+`
+export const TechIcon = styled.img`
+  width: 3rem;
+  height: 3rem;
+  margin: 1rem 0;
+  display: inline;
+  vertical-align: center;
 `
