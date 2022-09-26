@@ -41,7 +41,7 @@ export const SmallItem = styled.div`
 `
 export const LargeItem = styled.div`
   width: 14rem;
-  height: 6rem;
+  height: 16rem;
   border: 1px solid #f7c59f;
   border-radius: 5px;
   padding: 5px;
@@ -64,6 +64,13 @@ export const IconContainer = styled.div`
 export const TechIcon = styled.img`
   width: 3rem;
   height: 3rem;
+  margin: 1rem 0;
+  display: inline;
+  vertical-align: center;
+`
+export const SchoolIcon = styled.img`
+  width: 5rem;
+  height: 5rem;
   margin: 1rem 0;
   display: inline;
   vertical-align: center;

@@ -6,6 +6,7 @@ import {
   IconContainer,
   LargeItem,
   MainContentContainer,
+  SchoolIcon,
   SmallItem,
   TechIcon,
   WebsiteContainer,
@@ -27,6 +28,61 @@ const Home: FC = (): JSX.Element => {
         >
           Software Engineer
         </h1>
+        <Details>
+          <summary style={{ cursor: "pointer" }}>
+            {" "}
+            Education
+            {/* <BsInfoCircleFill style={middle} /> */}
+          </summary>
+          <div
+            style={{ display: "flex", flexWrap: "wrap", paddingTop: "2rem" }}
+          >
+            <LargeItem>
+              <div style={{ width: "100%", textAlign: "center" }}>
+                <SchoolIcon
+                  src={require("../Assets/wsu.png")}
+                  alt="TimDrevitch"
+                />
+              </div>
+              <h3
+                style={{
+                  marginTop: "-.75rem",
+                  color: "#d68b52",
+                  textAlign: "center",
+                }}
+              >
+                Worcester State University
+              </h3>
+              <h6>Bachelor's Degree (BS)</h6>
+              <h6 style={{ marginTop: "-1rem" }}>
+                Major: Computer Science (Software Development)
+              </h6>
+              <h6 style={{ marginTop: "-1rem" }}>Minor: Mathematics</h6>
+            </LargeItem>
+            <LargeItem>
+              <div style={{ width: "100%", textAlign: "center" }}>
+                <SchoolIcon
+                  src={require("../Assets/wpi.png")}
+                  alt="TimDrevitch"
+                />
+              </div>
+              <h3
+                style={{
+                  marginTop: "-.75rem",
+                  color: "#d68b52",
+                  textAlign: "center",
+                }}
+              >
+                Worcester Polytechnic Institute
+              </h3>
+              <h6>Master's Degree (MS)</h6>
+              <h6 style={{ marginTop: "-1rem" }}>
+                Major: Interactive Media (Game Development)
+              </h6>
+            </LargeItem>
+          </div>
+        </Details>
+        <br />
         <Details>
           <summary style={{ cursor: "pointer" }}>
             {" "}
@@ -255,6 +311,26 @@ const Home: FC = (): JSX.Element => {
                 <Description>NPM</Description>
               </IconContainer>
             </SmallItem>
+            <SmallItem>
+              <IconContainer>
+                <TechIcon
+                  src={require("../Assets/unity.png")}
+                  alt="TimDrevitch"
+                />
+                {/* <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://icons8.com/icon/P08kExl7rixR/unity"
+                >
+                  Unity
+                </a>{" "}
+                icon by{" "}
+                <a target="_blank" rel="noreferrer" href="https://icons8.com">
+                  Icons8
+                </a> */}
+                <Description>Unity</Description>
+              </IconContainer>
+            </SmallItem>
           </div>
         </Details>
         <br />
@@ -268,44 +344,204 @@ const Home: FC = (): JSX.Element => {
             style={{ display: "flex", flexWrap: "wrap", paddingTop: "2rem" }}
           >
             <SmallItem>
-              <p>HTML</p>
-              <p>Description</p>
+              <IconContainer>
+                <TechIcon
+                  src={require("../Assets/html.png")}
+                  alt="TimDrevitch"
+                />
+                {/* <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://icons8.com/icon/YWDsCjL0c2qv/html5"
+              >
+                HTML5
+              </a>{" "}
+              icon by{" "}
+              <a target="_blank" rel="noreferrer" href="https://icons8.com">
+                Icons8
+              </a> */}
+                <Description>HTML</Description>
+              </IconContainer>
             </SmallItem>
             <SmallItem>
-              <p>CSS</p>
-              <p>Description</p>
+              <IconContainer>
+                <TechIcon
+                  src={require("../Assets/css.png")}
+                  alt="TimDrevitch"
+                />
+                {/* <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://icons8.com/icon/38272/css3"
+              >
+                CSS3
+              </a>{" "}
+              icon by{" "}
+              <a target="_blank" rel="noreferrer" href="https://icons8.com">
+                Icons8
+              </a> */}
+                <Description>CSS</Description>
+              </IconContainer>
             </SmallItem>
             <SmallItem>
-              <p>Javascript</p>
-              <p>Description</p>
+              <IconContainer>
+                <TechIcon
+                  src={require("../Assets/javascript.png")}
+                  alt="TimDrevitch"
+                />
+                {/* <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://icons8.com/icon/108784/javascript"
+              >
+                JavaScript
+              </a>{" "}
+              icon by{" "}
+              <a target="_blank" rel="noreferrer" href="https://icons8.com">
+                Icons8
+              </a> */}
+                <Description>JavaScript</Description>
+              </IconContainer>
             </SmallItem>
             <SmallItem>
-              <p>Typescript</p>
-              <p>Description</p>
+              <IconContainer>
+                <TechIcon
+                  src={require("../Assets/typescript.png")}
+                  alt="TimDrevitch"
+                />
+                {/* <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://icons8.com/icon/cHBUT9SmrD2V/typescript"
+              >
+                TypeScript
+              </a>{" "}
+              icon by{" "}
+              <a target="_blank" rel="noreferrer" href="https://icons8.com">
+                Icons8
+              </a> */}
+                <Description>TypeScript</Description>
+              </IconContainer>
             </SmallItem>
             <SmallItem>
-              <p>Java</p>
-              <p>Description</p>
+              <IconContainer>
+                <TechIcon
+                  src={require("../Assets/java.png")}
+                  alt="TimDrevitch"
+                />
+                {/* <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://icons8.com/icon/13679/java"
+              >
+                Java
+              </a>{" "}
+              icon by{" "}
+              <a target="_blank" rel="noreferrer" href="https://icons8.com">
+                Icons8
+              </a> */}
+                <Description>Java</Description>
+              </IconContainer>
             </SmallItem>
             <SmallItem>
-              <p>Swift</p>
-              <p>Description</p>
+              <IconContainer>
+                <TechIcon
+                  src={require("../Assets/swift.png")}
+                  alt="TimDrevitch"
+                />
+                {/* <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://icons8.com/icon/45985/swift"
+              >
+                Swift
+              </a>{" "}
+              icon by{" "}
+              <a target="_blank" rel="noreferrer" href="https://icons8.com">
+                Icons8
+              </a> */}
+                <Description>Swift</Description>
+              </IconContainer>
             </SmallItem>
             <SmallItem>
-              <p>SQL</p>
-              <p>Description</p>
+              <IconContainer>
+                <TechIcon
+                  src={require("../Assets/sql.png")}
+                  alt="TimDrevitch"
+                />
+                {/* <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://icons8.com/icon/KZHjwwenS7oK/database"
+              >
+                Database
+              </a>{" "}
+              icon by{" "}
+              <a target="_blank" rel="noreferrer" href="https://icons8.com">
+                Icons8
+              </a> */}
+                <Description>SQL</Description>
+              </IconContainer>
             </SmallItem>
             <SmallItem>
-              <p>md</p>
-              <p>Description</p>
+              <IconContainer>
+                <TechIcon
+                  src={require("../Assets/markdown.png")}
+                  alt="TimDrevitch"
+                />
+                {/* <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://icons8.com/icon/21827/markdown"
+              >
+                Markdown
+              </a>{" "}
+              icon by{" "}
+              <a target="_blank" rel="noreferrer" href="https://icons8.com">
+                Icons8
+              </a> */}
+                <Description>Markdown</Description>
+              </IconContainer>
             </SmallItem>
             <SmallItem>
-              <p>JSON</p>
-              <p>Description</p>
+              <IconContainer>
+                <TechIcon
+                  src={require("../Assets/jsonbson.png")}
+                  alt="TimDrevitch"
+                />
+                {/* <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://icons8.com/icon/122581/curly-brackets"
+              >
+                Curly Brackets
+              </a>{" "}
+              icon by{" "}
+              <a target="_blank" rel="noreferrer" href="https://icons8.com">
+                Icons8
+              </a> */}
+                <Description>JSON / BSON</Description>
+              </IconContainer>
             </SmallItem>
             <SmallItem>
-              <p>Bash</p>
-              <p>Description</p>
+              <IconContainer>
+                <TechIcon
+                  src={require("../Assets/bashshell.png")}
+                  alt="TimDrevitch"
+                />
+                {/* <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://icons8.com/icon/10250/console"
+              >
+                Console
+              </a>{" "}
+              icon by{" "}
+              <a target="_blank" rel="noreferrer" href="https://icons8.com">
+                Icons8
+              </a> */}
+                <Description>Bash / Shell</Description>
+              </IconContainer>
             </SmallItem>
           </div>
         </Details>
@@ -361,6 +597,9 @@ const Home: FC = (): JSX.Element => {
             </LargeItem>
           </div>
         </Details>
+        <br />
+        <br />
+        <br />
       </MainContentContainer>
     </WebsiteContainer>
   )
