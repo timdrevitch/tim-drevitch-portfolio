@@ -11,5 +11,4 @@ My portfolio website
 *Languages*
 - HTML
 - CSS
-- JavaScript / JSX
 - TypeScript / TSX
