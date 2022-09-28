@@ -4,7 +4,6 @@ My portfolio website
 *Technology*
 - React / React Router
 - Styled Components
-- VScode
 - Prettier
 - GitHub / GitHub Pages
 - NPM
