@@ -35,6 +35,7 @@ export const SmallItem = styled.div`
   padding: 5px;
   margin-right: 2rem;
   margin-bottom: 2rem;
+  background: #0d0e11;
   /* @media (max-width: 950px) {
     width: 95%;
   } */
@@ -47,9 +48,23 @@ export const LargeItem = styled.div`
   padding: 5px;
   margin-right: 2rem;
   margin-bottom: 2rem;
+  background: #0d0e11;
   /* @media (max-width: 950px) {
     width: 95%;
   } */
+`
+export const SchoolItem = styled.div`
+  width: 40%;
+  border: 1px solid #f7c59f;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  background: #0d0e11;
+  @media (max-width: 950px) {
+    width: 100%;
+    margin-right: 0;
+  }
 `
 export const Details = styled.details`
   margin-bottom: 0.25rem;

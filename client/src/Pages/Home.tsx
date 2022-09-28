@@ -1,4 +1,6 @@
 import { CSSProperties, FC } from "react"
+import { GrLinkedin, GrTwitter, GrGithub } from "react-icons/gr"
+import SocialMedia from "../Components/SocialMedia"
 // import { BsInfoCircleFill } from "react-icons/bs"
 import {
   Description,
@@ -7,6 +9,7 @@ import {
   LargeItem,
   MainContentContainer,
   SchoolIcon,
+  SchoolItem,
   SmallItem,
   TechIcon,
   WebsiteContainer,
@@ -27,11 +30,110 @@ const Home: FC = (): JSX.Element => {
           }}
         >
           Software Engineer
+          <SocialMedia />
         </h1>
         <Details>
           <summary style={{ cursor: "pointer" }}>
             {" "}
             Education
+            {/* <BsInfoCircleFill style={middle} /> */}
+          </summary>
+          <div
+            style={{ display: "flex", flexWrap: "wrap", paddingTop: "2rem" }}
+          >
+            <SchoolItem>
+              <div style={{ width: "100%", textAlign: "center" }}>
+                <SchoolIcon
+                  src={require("../Assets/wsu.png")}
+                  alt="TimDrevitch"
+                />
+              </div>
+              <h3
+                style={{
+                  marginTop: "-.75rem",
+                  color: "#d68b52",
+                  textAlign: "center",
+                }}
+              >
+                Worcester State University
+              </h3>
+              <h6 style={{ textAlign: "center" }}>Bachelor's Degree (BS)</h6>
+              <h6 style={{ marginTop: "-1rem" }}>
+                Major: <em>Computer Science (Software Development)</em>
+              </h6>
+              <h6 style={{ marginTop: "-1rem" }}>
+                Minor: <em>Mathematics</em>
+              </h6>
+              <h6 style={{ marginTop: "-1rem" }}>
+                Accolades:{" "}
+                <em>
+                  <ul>
+                    <li>3.5/4.00 GPA</li>
+                    <li>Dean's List (x3)</li>
+                    <li>All-Academic Team (x8)</li>
+                    <li>National College Honor Society</li>
+                    <li>Paid CS Peer-Tutor</li>
+                  </ul>
+                </em>
+              </h6>
+              <h6 style={{ marginTop: "-1rem" }}>
+                Activities:{" "}
+                <em>
+                  <ul>
+                    <li>NCAA Men's Ice Hockey Team</li>
+                    <li>MASCAC Rookie of the Week (x3)</li>
+                    <li>WSU All-Sports Rookie of the Year (2017-18)</li>
+                  </ul>
+                </em>
+              </h6>
+            </SchoolItem>
+            <SchoolItem>
+              <div style={{ width: "100%", textAlign: "center" }}>
+                <SchoolIcon
+                  src={require("../Assets/wpi.png")}
+                  alt="TimDrevitch"
+                />
+              </div>
+              <h3
+                style={{
+                  marginTop: "-.75rem",
+                  color: "#d68b52",
+                  textAlign: "center",
+                }}
+              >
+                Worcester Polytechnic Institute
+              </h3>
+              <h6 style={{ textAlign: "center" }}>Master's Degree (MS)</h6>
+              <h6 style={{ marginTop: "-1rem" }}>
+                Major: <em>Interactive Media (Game Development)</em>
+              </h6>
+              <h6 style={{ marginTop: "-1rem" }}>
+                Thesis: <em>Smart City Data Ethics</em>
+              </h6>
+              <h6 style={{ marginTop: "-1rem" }}>
+                Accolades:{" "}
+                <em>
+                  <ul>
+                    <li>3.85/4.00 GPA</li>
+                  </ul>
+                </em>
+              </h6>
+              <h6 style={{ marginTop: "-1rem" }}>
+                Activities:{" "}
+                <em>
+                  <ul>
+                    <li>ACHA Men's Ice Hockey Team</li>
+                  </ul>
+                </em>
+              </h6>
+            </SchoolItem>
+          </div>
+        </Details>
+        <br />
+        <Details>
+          <summary style={{ cursor: "pointer" }}>
+            {" "}
+            Skills
             {/* <BsInfoCircleFill style={middle} /> */}
           </summary>
           <div
@@ -51,18 +153,14 @@ const Home: FC = (): JSX.Element => {
                   textAlign: "center",
                 }}
               >
-                Worcester State University
+                Websites
               </h3>
-              <h6>Bachelor's Degree (BS)</h6>
-              <h6 style={{ marginTop: "-1rem" }}>
-                Major: Computer Science (Software Development)
-              </h6>
-              <h6 style={{ marginTop: "-1rem" }}>Minor: Mathematics</h6>
+              <h6>Front-End-Only Websites (like this one)</h6>
             </LargeItem>
             <LargeItem>
               <div style={{ width: "100%", textAlign: "center" }}>
                 <SchoolIcon
-                  src={require("../Assets/wpi.png")}
+                  src={require("../Assets/wsu.png")}
                   alt="TimDrevitch"
                 />
               </div>
@@ -73,12 +171,91 @@ const Home: FC = (): JSX.Element => {
                   textAlign: "center",
                 }}
               >
-                Worcester Polytechnic Institute
+                Web Applications
               </h3>
-              <h6>Master's Degree (MS)</h6>
+              <h6>Full-Stack Web Applications</h6>
+              <h6 style={{ marginTop: "-1rem" }}>Front-End & Back-End</h6>
               <h6 style={{ marginTop: "-1rem" }}>
-                Major: Interactive Media (Game Development)
+                Client / API / Server / Database
               </h6>
+            </LargeItem>
+            <LargeItem>
+              <div style={{ width: "100%", textAlign: "center" }}>
+                <SchoolIcon
+                  src={require("../Assets/wsu.png")}
+                  alt="TimDrevitch"
+                />
+              </div>
+              <h3
+                style={{
+                  marginTop: "-.75rem",
+                  color: "#d68b52",
+                  textAlign: "center",
+                }}
+              >
+                IOS Applications
+              </h3>
+              <h6>Licenced IOS App Store Developer</h6>
+              <h6 style={{ marginTop: "-1rem" }}>Xcode + Swift Development</h6>
+              <h6 style={{ marginTop: "-1rem" }}>App Store Connect</h6>
+            </LargeItem>
+            <LargeItem>
+              <div style={{ width: "100%", textAlign: "center" }}>
+                <SchoolIcon
+                  src={require("../Assets/wsu.png")}
+                  alt="TimDrevitch"
+                />
+              </div>
+              <h3
+                style={{
+                  marginTop: "-.75rem",
+                  color: "#d68b52",
+                  textAlign: "center",
+                }}
+              >
+                Video Games
+              </h3>
+              <h6>Unity / Unreal / Xcode</h6>
+              <h6 style={{ marginTop: "-1rem" }}>C# / C++ / Swift</h6>
+            </LargeItem>
+            <LargeItem>
+              <div style={{ width: "100%", textAlign: "center" }}>
+                <SchoolIcon
+                  src={require("../Assets/wsu.png")}
+                  alt="TimDrevitch"
+                />
+              </div>
+              <h3
+                style={{
+                  marginTop: "-.75rem",
+                  color: "#d68b52",
+                  textAlign: "center",
+                }}
+              >
+                Version Control
+              </h3>
+              <h6>GitHub</h6>
+              <h6>GitLab</h6>
+            </LargeItem>
+            <LargeItem>
+              <div style={{ width: "100%", textAlign: "center" }}>
+                <SchoolIcon
+                  src={require("../Assets/wsu.png")}
+                  alt="TimDrevitch"
+                />
+              </div>
+              <h3
+                style={{
+                  marginTop: "-.75rem",
+                  color: "#d68b52",
+                  textAlign: "center",
+                }}
+              >
+                RESTful APIs
+              </h3>
+              <h6>CRUD opperations</h6>
+              <h6 style={{ marginTop: "-1rem" }}>HTTP requests</h6>
+              <h6 style={{ marginTop: "-1rem" }}>HTTP responses</h6>
             </LargeItem>
           </div>
         </Details>
@@ -155,6 +332,26 @@ const Home: FC = (): JSX.Element => {
             <SmallItem>
               <IconContainer>
                 <TechIcon
+                  src={require("../Assets/mysql.png")}
+                  alt="TimDrevitch"
+                />
+                {/* <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://icons8.com/icon/UFXRpPFebwa2/mysql-logo"
+              >
+                MySQL Logo
+              </a>{" "}
+              icon by{" "}
+              <a target="_blank" rel="noreferrer" href="https://icons8.com">
+                Icons8
+              </a> */}
+                <Description>MySQL</Description>
+              </IconContainer>
+            </SmallItem>
+            <SmallItem>
+              <IconContainer>
+                <TechIcon
                   src={require("../Assets/mongodb.png")}
                   alt="TimDrevitch"
                 />
@@ -176,26 +373,6 @@ const Home: FC = (): JSX.Element => {
             <SmallItem>
               <IconContainer>
                 <TechIcon
-                  src={require("../Assets/mysql.png")}
-                  alt="TimDrevitch"
-                />
-                {/* <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://icons8.com/icon/UFXRpPFebwa2/mysql-logo"
-              >
-                MySQL Logo
-              </a>{" "}
-              icon by{" "}
-              <a target="_blank" rel="noreferrer" href="https://icons8.com">
-                Icons8
-              </a> */}
-                <Description>MySQL</Description>
-              </IconContainer>
-            </SmallItem>
-            <SmallItem>
-              <IconContainer>
-                <TechIcon
                   src={require("../Assets/xcode.png")}
                   alt="TimDrevitch"
                 />
@@ -211,26 +388,6 @@ const Home: FC = (): JSX.Element => {
                 Icons8
               </a> */}
                 <Description>Xcode</Description>
-              </IconContainer>
-            </SmallItem>
-            <SmallItem>
-              <IconContainer>
-                <TechIcon
-                  src={require("../Assets/github.png")}
-                  alt="TimDrevitch"
-                />
-                {/* <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://icons8.com/icon/AZOZNnY73haj/github"
-              >
-                GitHub
-              </a>{" "}
-              icon by{" "}
-              <a target="_blank" rel="noreferrer" href="https://icons8.com">
-                Icons8
-              </a> */}
-                <Description>GitHub</Description>
               </IconContainer>
             </SmallItem>
             <SmallItem>
@@ -329,6 +486,46 @@ const Home: FC = (): JSX.Element => {
                   Icons8
                 </a> */}
                 <Description>Unity</Description>
+              </IconContainer>
+            </SmallItem>
+            <SmallItem>
+              <IconContainer>
+                <TechIcon
+                  src={require("../Assets/insomnia.png")}
+                  alt="TimDrevitch"
+                />
+                {/* <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://icons8.com/icon/P08kExl7rixR/unity"
+                >
+                  Unity
+                </a>{" "}
+                icon by{" "}
+                <a target="_blank" rel="noreferrer" href="https://icons8.com">
+                  Icons8
+                </a> */}
+                <Description>Insomia</Description>
+              </IconContainer>
+            </SmallItem>
+            <SmallItem>
+              <IconContainer>
+                <TechIcon
+                  src={require("../Assets/github.png")}
+                  alt="TimDrevitch"
+                />
+                {/* <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://icons8.com/icon/AZOZNnY73haj/github"
+              >
+                GitHub
+              </a>{" "}
+              icon by{" "}
+              <a target="_blank" rel="noreferrer" href="https://icons8.com">
+                Icons8
+              </a> */}
+                <Description>Git</Description>
               </IconContainer>
             </SmallItem>
           </div>
