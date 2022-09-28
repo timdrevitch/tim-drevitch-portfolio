@@ -1,19 +1,16 @@
 # 📂 Tim Drevitch Portfolio
 My portfolio website
 
-*Tech Stack*
-- React / React Router / React Router Dom
+*Technology*
+- React / React Router
 - Styled Components
 - VScode
 - Prettier
-- GitHub / GitHub Pages / Git Ignore
+- GitHub / GitHub Pages
 - NPM
-- Dotenv
 
 *Languages*
 - HTML
 - CSS
-- JavaScript
-- TypeScript
-- MD
-- JSON
+- JavaScript / JSX
+- TypeScript / TSX
