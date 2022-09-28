@@ -4,6 +4,7 @@ import Contact from "../Pages/Contact"
 import Home from "../Pages/Home"
 import Resume from "../Pages/Resume"
 import Navbar from "./Layout/Navbar"
+import SocialMedia from "./SocialMedia"
 
 const App: FC = (): JSX.Element => {
   return (
