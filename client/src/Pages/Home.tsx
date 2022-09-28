@@ -234,8 +234,7 @@ const Home: FC = (): JSX.Element => {
               >
                 Version Control
               </h3>
-              <h6>GitHub</h6>
-              <h6>GitLab</h6>
+              <h6>GitHub / GitLab</h6>
             </LargeItem>
             <LargeItem>
               <div style={{ width: "100%", textAlign: "center" }}>
@@ -256,6 +255,24 @@ const Home: FC = (): JSX.Element => {
               <h6>CRUD opperations</h6>
               <h6 style={{ marginTop: "-1rem" }}>HTTP requests</h6>
               <h6 style={{ marginTop: "-1rem" }}>HTTP responses</h6>
+            </LargeItem>
+            <LargeItem>
+              <div style={{ width: "100%", textAlign: "center" }}>
+                <SchoolIcon
+                  src={require("../Assets/wsu.png")}
+                  alt="TimDrevitch"
+                />
+              </div>
+              <h3
+                style={{
+                  marginTop: "-.75rem",
+                  color: "#d68b52",
+                  textAlign: "center",
+                }}
+              >
+                Agile Sprints
+              </h3>
+              <h6>Kanban / Scrum</h6>
             </LargeItem>
           </div>
         </Details>
