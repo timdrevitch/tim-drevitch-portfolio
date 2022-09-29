@@ -33,41 +33,48 @@ export const SmallItem = styled.div`
   border: 1px solid #f7c59f;
   border-radius: 5px;
   padding: 5px;
-  margin-right: 2rem;
-  margin-bottom: 2rem;
+  /* margin-right: 2rem;
+  margin-bottom: 2rem; */
   background: #0d0e11;
+  box-shadow: 0px 5px 12px 1px rgba(0, 0, 0, 0.59);
   /* @media (max-width: 950px) {
     width: 95%;
   } */
 `
 export const LargeItem = styled.div`
-  width: 14rem;
-  height: 16rem;
+  width: 13rem;
+  height: 14rem;
   border: 1px solid #f7c59f;
   border-radius: 5px;
-  padding: 5px;
-  margin-right: 2rem;
-  margin-bottom: 2rem;
+  padding: 10px;
+  /* margin-right: 1rem;
+  margin-left: 1rem; */
+  /* margin-bottom: 1rem; */
   background: #0d0e11;
-  /* @media (max-width: 950px) {
+  box-shadow: 0px 5px 12px 1px rgba(0, 0, 0, 0.59);
+  @media (max-width: 950px) {
     width: 95%;
-  } */
+  }
 `
 export const SchoolItem = styled.div`
   width: 40%;
   border: 1px solid #f7c59f;
   border-radius: 5px;
   padding: 10px;
-  margin-right: 2rem;
-  margin-bottom: 2rem;
+  /* margin-right: 2rem;
+  margin-bottom: 2rem; */
   background: #0d0e11;
+  box-shadow: 0px 5px 12px 1px rgba(0, 0, 0, 0.59);
   @media (max-width: 950px) {
-    width: 100%;
-    margin-right: 0;
+    width: 95%;
+    /* margin-right: 0; */
   }
 `
 export const Details = styled.details`
   margin-bottom: 0.25rem;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.11);
+  padding: 10px;
 `
 export const Description = styled.h6`
   margin-top: -1em;

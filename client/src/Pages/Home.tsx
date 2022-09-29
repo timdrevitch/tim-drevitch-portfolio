@@ -1,5 +1,4 @@
-import { CSSProperties, FC } from "react"
-import { GrLinkedin, GrTwitter, GrGithub } from "react-icons/gr"
+import { FC } from "react"
 import SocialMedia from "../Components/SocialMedia"
 // import { BsInfoCircleFill } from "react-icons/bs"
 import {
@@ -39,7 +38,14 @@ const Home: FC = (): JSX.Element => {
             {/* <BsInfoCircleFill style={middle} /> */}
           </summary>
           <div
-            style={{ display: "flex", flexWrap: "wrap", paddingTop: "2rem" }}
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              paddingTop: "2rem",
+              paddingBottom: "2rem",
+              gap: "2rem",
+              justifyContent: "center",
+            }}
           >
             <SchoolItem>
               <div style={{ width: "100%", textAlign: "center" }}>
@@ -137,7 +143,14 @@ const Home: FC = (): JSX.Element => {
             {/* <BsInfoCircleFill style={middle} /> */}
           </summary>
           <div
-            style={{ display: "flex", flexWrap: "wrap", paddingTop: "2rem" }}
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              paddingTop: "2rem",
+              paddingBottom: "2rem",
+              gap: "2rem",
+              justifyContent: "center",
+            }}
           >
             <LargeItem>
               <div style={{ width: "100%", textAlign: "center" }}>
@@ -235,6 +248,7 @@ const Home: FC = (): JSX.Element => {
                 Version Control
               </h3>
               <h6>GitHub / GitLab</h6>
+              <h6 style={{ marginTop: "-1rem" }}>Semantic versioning</h6>
             </LargeItem>
             <LargeItem>
               <div style={{ width: "100%", textAlign: "center" }}>
@@ -253,8 +267,8 @@ const Home: FC = (): JSX.Element => {
                 RESTful APIs
               </h3>
               <h6>CRUD opperations</h6>
-              <h6 style={{ marginTop: "-1rem" }}>HTTP requests</h6>
-              <h6 style={{ marginTop: "-1rem" }}>HTTP responses</h6>
+              <h6 style={{ marginTop: "-1rem" }}>HTTP requests / responses</h6>
+              <h6 style={{ marginTop: "-1rem" }}>Insomnia / Postman</h6>
             </LargeItem>
             <LargeItem>
               <div style={{ width: "100%", textAlign: "center" }}>
@@ -284,7 +298,14 @@ const Home: FC = (): JSX.Element => {
             {/* <BsInfoCircleFill style={middle} /> */}
           </summary>
           <div
-            style={{ display: "flex", flexWrap: "wrap", paddingTop: "2rem" }}
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              paddingTop: "2rem",
+              paddingBottom: "2rem",
+              gap: "2rem",
+              justifyContent: "center",
+            }}
           >
             <SmallItem>
               <IconContainer>
@@ -555,7 +576,14 @@ const Home: FC = (): JSX.Element => {
             {/* <BsInfoCircleFill style={middle} /> */}
           </summary>
           <div
-            style={{ display: "flex", flexWrap: "wrap", paddingTop: "2rem" }}
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              paddingTop: "2rem",
+              paddingBottom: "2rem",
+              gap: "2rem",
+              justifyContent: "center",
+            }}
           >
             <SmallItem>
               <IconContainer>
@@ -767,7 +795,14 @@ const Home: FC = (): JSX.Element => {
             {/* <BsInfoCircleFill style={middle} /> */}
           </summary>
           <div
-            style={{ display: "flex", flexWrap: "wrap", paddingTop: "2rem" }}
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              paddingTop: "2rem",
+              paddingBottom: "2rem",
+              gap: "2rem",
+              justifyContent: "center",
+            }}
           >
             <LargeItem>
               <h3>Classic Todo App</h3>
@@ -795,7 +830,14 @@ const Home: FC = (): JSX.Element => {
             {/* <BsInfoCircleFill style={middle} /> */}
           </summary>
           <div
-            style={{ display: "flex", flexWrap: "wrap", paddingTop: "2rem" }}
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              paddingTop: "2rem",
+              paddingBottom: "2rem",
+              gap: "2rem",
+              justifyContent: "center",
+            }}
           >
             <LargeItem>
               <h3>Classic Todo App</h3>

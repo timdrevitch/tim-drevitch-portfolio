@@ -15,6 +15,7 @@ export const SMListSection = styled.ul`
 export const SMListItem = styled.li`
   list-style: none;
   display: inline-block;
+  margin-right: 15px;
 `
 export const SMButton = styled.button`
   background: none;

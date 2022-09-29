@@ -34,32 +34,53 @@ const SocialMedia: FC = (): JSX.Element => {
     <SMContainer>
       <SMListSection>
         <SMListItem>
-          <SMButton
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://twitter.com/TimDrevitchDev"
+          >
+            <AiFillTwitterCircle color={siteColor} style={btnStyle} />
+          </a>{" "}
+          {/* <SMButton
             onClick={() => {
               window.location.href = "https://twitter.com/TimDrevitchDev"
             }}
           >
             <AiFillTwitterCircle color={siteColor} style={btnStyle} />
-          </SMButton>
+          </SMButton> */}
         </SMListItem>
         <SMListItem>
-          <SMButton
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/tim-drevitch-43016719b"
+          >
+            <AiFillLinkedin color={siteColor} style={btnStyleBox} />
+          </a>{" "}
+          {/* <SMButton
             onClick={() => {
               window.location.href =
                 "https://www.linkedin.com/in/tim-drevitch-43016719b"
             }}
           >
             <AiFillLinkedin color={siteColor} style={btnStyleBox} />
-          </SMButton>
+          </SMButton> */}
         </SMListItem>
         <SMListItem>
-          <SMButton
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/timdrevitch"
+          >
+            <AiFillGithub color={siteColor} style={btnStyle} />
+          </a>{" "}
+          {/* <SMButton
             onClick={() => {
               window.location.href = "https://github.com/timdrevitch"
             }}
           >
             <AiFillGithub color={siteColor} style={btnStyle} />
-          </SMButton>
+          </SMButton> */}
         </SMListItem>
       </SMListSection>
     </SMContainer>
