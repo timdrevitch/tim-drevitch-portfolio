@@ -12,3 +12,9 @@ My portfolio website
 - HTML
 - CSS
 - TypeScript / TSX
+
+# Run this project on your own machine
+1. Clone Repo
+2. Change directories to the *client* folder in your CLI of choice
+3. Run *npm install*
+4. Run *npm run start*
