@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import Contact from "../Pages/Contact"
 import Home from "../Pages/Home"
 import Resume from "../Pages/Resume"
+import Footer from "./Layout/Footer"
 import Navbar from "./Layout/Navbar"
-import SocialMedia from "./SocialMedia"
 
 const App: FC = (): JSX.Element => {
   return (
@@ -15,6 +15,7 @@ const App: FC = (): JSX.Element => {
         <Route path="/tim-drevitch-portfolio/resume" element={<Resume />} />
         <Route path="/tim-drevitch-portfolio/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </Router>
   )
 }
