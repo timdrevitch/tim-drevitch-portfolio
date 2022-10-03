@@ -120,7 +120,7 @@ const Home: FC = (): JSX.Element => {
                 Accolades:{" "}
                 <em>
                   <ul>
-                    <li>3.85/4.00 GPA</li>
+                    <li>3.9/4.00 GPA</li>
                   </ul>
                 </em>
               </h6>
