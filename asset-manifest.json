@@ -1,18 +1,20 @@
 {
   "files": {
     "main.css": "/tim-drevitch-portfolio/static/css/main.d3a521dd.css",
-    "main.js": "/tim-drevitch-portfolio/static/js/main.d5c8e503.js",
+    "main.js": "/tim-drevitch-portfolio/static/js/main.58b54742.js",
+    "static/media/tim_drevitch_resume.png": "/tim-drevitch-portfolio/static/media/tim_drevitch_resume.fee1ef8ab584a975cfaf.png",
     "static/media/wsu.png": "/tim-drevitch-portfolio/static/media/wsu.4be8dc8c700143a6996d.png",
     "static/media/wpi.png": "/tim-drevitch-portfolio/static/media/wpi.e2ece70b93e0f0114ef9.png",
     "static/media/contactme.png": "/tim-drevitch-portfolio/static/media/contactme.8219f6c3c410137a2c76.png",
     "static/media/tdnavlogo.png": "/tim-drevitch-portfolio/static/media/tdnavlogo.ffae68a8304c7a826ddf.png",
+    "static/media/axios.png": "/tim-drevitch-portfolio/static/media/axios.0738a6f2a78ea9e6251b.png",
     "static/media/styledcomponents.png": "/tim-drevitch-portfolio/static/media/styledcomponents.f339b2d4eb9e1868b700.png",
     "index.html": "/tim-drevitch-portfolio/index.html",
     "main.d3a521dd.css.map": "/tim-drevitch-portfolio/static/css/main.d3a521dd.css.map",
-    "main.d5c8e503.js.map": "/tim-drevitch-portfolio/static/js/main.d5c8e503.js.map"
+    "main.58b54742.js.map": "/tim-drevitch-portfolio/static/js/main.58b54742.js.map"
   },
   "entrypoints": [
     "static/css/main.d3a521dd.css",
-    "static/js/main.d5c8e503.js"
+    "static/js/main.58b54742.js"
   ]
 }
