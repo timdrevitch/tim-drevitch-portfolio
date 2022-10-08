@@ -1,6 +1,8 @@
 import { FC } from "react"
 import SocialMedia from "../Components/SocialMedia"
+import ReactPlayer from "react-player"
 // import { BsInfoCircleFill } from "react-icons/bs"
+import { AiFillGithub } from "react-icons/ai"
 import {
   Description,
   Details,
@@ -469,6 +471,15 @@ const Home: FC = (): JSX.Element => {
             <SmallItem>
               <IconContainer>
                 <TechIcon
+                  src={require("../Assets/axios.png")}
+                  alt="TimDrevitch"
+                />
+                <Description>Axios</Description>
+              </IconContainer>
+            </SmallItem>
+            <SmallItem>
+              <IconContainer>
+                <TechIcon
                   src={require("../Assets/vscode.png")}
                   alt="TimDrevitch"
                 />
@@ -549,6 +560,18 @@ const Home: FC = (): JSX.Element => {
             <SmallItem>
               <IconContainer>
                 <TechIcon
+                  src={require("../Assets/git.png")}
+                  alt="TimDrevitch"
+                />
+                {/* <a target="_blank"
+                rel="noreferrer" href="https://icons8.com/icon/20906/git">Git</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */}
+                <Description>Git</Description>
+              </IconContainer>
+            </SmallItem>
+
+            <SmallItem>
+              <IconContainer>
+                <TechIcon
                   src={require("../Assets/github.png")}
                   alt="TimDrevitch"
                 />
@@ -563,7 +586,17 @@ const Home: FC = (): JSX.Element => {
               <a target="_blank" rel="noreferrer" href="https://icons8.com">
                 Icons8
               </a> */}
-                <Description>Git</Description>
+                <Description>GitHub</Description>
+              </IconContainer>
+            </SmallItem>
+            <SmallItem>
+              <IconContainer>
+                <TechIcon
+                  src={require("../Assets/gitlab.png")}
+                  alt="TimDrevitch"
+                />
+                {/* <a target="_blank" rel="noreferrer" href="https://icons8.com/icon/34886/gitlab">Gitlab</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */}
+                <Description>GitLab</Description>
               </IconContainer>
             </SmallItem>
           </div>
@@ -791,7 +824,7 @@ const Home: FC = (): JSX.Element => {
         <Details>
           <summary style={{ cursor: "pointer" }}>
             {" "}
-            Full-Stack Portfolio Projects
+            Web Application Projects
             {/* <BsInfoCircleFill style={middle} /> */}
           </summary>
           <div
@@ -804,29 +837,396 @@ const Home: FC = (): JSX.Element => {
               justifyContent: "center",
             }}
           >
-            <LargeItem>
-              <h3>Classic Todo App</h3>
-              <h6>Description</h6>{" "}
-            </LargeItem>
-            <LargeItem>
-              <h3>Student Loans App</h3>
-              <h6>Description</h6>
-            </LargeItem>
-            <LargeItem>
+            <SchoolItem>
+              <div>
+                <h3 style={{ color: "#d68b52", float: "left" }}>
+                  Classic Todo List App
+                </h3>
+                <h3 style={{ float: "right" }}>
+                  <abbr title="View this repository on GitHub">
+                    <a
+                      href="https://github.com/timdrevitch/classic-todo-app"
+                      target="_blank"
+                      rel="noreferrer"
+                      style={{ color: "#F7C59F" }}
+                    >
+                      <AiFillGithub />
+                    </a>
+                  </abbr>
+                </h3>
+                <ReactPlayer
+                  width="100%"
+                  center="center"
+                  aspectRatio="scale"
+                  controls
+                  url="https://youtu.be/p8AJAcoDnH8"
+                />
+                <h6 style={{ marginTop: "4rem" }}>
+                  This <span style={{ color: "#d68b52" }}>full stack</span> web
+                  application allows users to perform the four most common CRUD
+                  operations: Create, Read, Update, and Delete. This is my own
+                  virsion of the classic "todo list" application that most
+                  developers will make to learn the basics of full stack
+                  development.
+                </h6>
+                <h6>
+                  Technology Used:
+                  <p style={{ textAlign: "left" }}>
+                    <img
+                      src={require("../Assets/react.png")}
+                      alt="React"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/node.png")}
+                      alt="Node"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/express.png")}
+                      alt="Express"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/mongodb.png")}
+                      alt="MongoDB"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/axios.png")}
+                      alt="Axios"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/styledcomponents.png")}
+                      alt="styled-components"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/git.png")}
+                      alt="Git"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/github.png")}
+                      alt="Git"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/insomnia.png")}
+                      alt="Git"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/npm.png")}
+                      alt="Git"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/vscode.png")}
+                      alt="VS Code"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                  </p>
+                </h6>
+                <h6 style={{ marginTop: "-1rem" }}>
+                  Languages Used:
+                  <p style={{ textAlign: "left" }}>
+                    <img
+                      src={require("../Assets/html.png")}
+                      alt="html"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/css.png")}
+                      alt="css"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/javascript.png")}
+                      alt="javascript"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/typescript.png")}
+                      alt="typescript"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/jsonbson.png")}
+                      alt="jsonbson"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                  </p>
+                </h6>
+              </div>
+            </SchoolItem>
+            <SchoolItem>
+              <div>
+                <h3 style={{ color: "#d68b52", float: "left" }}>
+                  Student Loans Calculator App
+                </h3>
+                <h3 style={{ float: "right" }}>
+                  <abbr title="View this repository on GitHub">
+                    <a
+                      href="https://github.com/timdrevitch/student-loans-app"
+                      target="_blank"
+                      rel="noreferrer"
+                      style={{ color: "#F7C59F" }}
+                    >
+                      <AiFillGithub />
+                    </a>
+                  </abbr>
+                </h3>
+                <ReactPlayer
+                  width="100%"
+                  border="3px solid #d68b52"
+                  controls
+                  url="https://youtu.be/UlhVoZHbtq0"
+                />
+                <h6 style={{ marginTop: "4rem" }}>
+                  This <span style={{ color: "#d68b52" }}>full stack</span> web
+                  application allows users to enter information about their
+                  current student loans. Once entered, the program will do many
+                  calculations behind the scenes to predict things like how much
+                  the loan will accrue for the next year, how much it accrues
+                  every month, and how much it accrues every day.
+                </h6>
+                <h6>
+                  Technology Used:
+                  <p style={{ textAlign: "left" }}>
+                    <img
+                      src={require("../Assets/react.png")}
+                      alt="React"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/node.png")}
+                      alt="Node"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/express.png")}
+                      alt="Express"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/mongodb.png")}
+                      alt="MongoDB"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/axios.png")}
+                      alt="Axios"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/styledcomponents.png")}
+                      alt="styled-components"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/git.png")}
+                      alt="Git"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/github.png")}
+                      alt="Git"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/insomnia.png")}
+                      alt="Git"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/npm.png")}
+                      alt="Git"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/vscode.png")}
+                      alt="VS Code"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                  </p>
+                </h6>
+                <h6 style={{ marginTop: "-1rem" }}>
+                  Languages Used:
+                  <p style={{ textAlign: "left" }}>
+                    <img
+                      src={require("../Assets/html.png")}
+                      alt="React"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/css.png")}
+                      alt="Node"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/javascript.png")}
+                      alt="Express"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/typescript.png")}
+                      alt="MongoDB"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/jsonbson.png")}
+                      alt="styled-components"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                  </p>
+                </h6>
+              </div>
+            </SchoolItem>
+            {/* <SchoolItem>
               <h3>App 3</h3>
               <h6>Description</h6>
-            </LargeItem>
-            <LargeItem>
+            </SchoolItem>
+            <SchoolItem>
               <h3>App 4</h3>
               <h6>Description</h6>
-            </LargeItem>
+            </SchoolItem> */}
           </div>
         </Details>
         <br />
         <Details>
           <summary style={{ cursor: "pointer" }}>
             {" "}
-            Frontend-Only Portfolio Projects
+            Native Application Projects
             {/* <BsInfoCircleFill style={middle} /> */}
           </summary>
           <div
@@ -839,18 +1239,21 @@ const Home: FC = (): JSX.Element => {
               justifyContent: "center",
             }}
           >
-            <LargeItem>
-              <h3>Classic Todo App</h3>
-              <h6>Description</h6>{" "}
-            </LargeItem>
-            <LargeItem>
-              <h3>Student Loans App</h3>
+            <SchoolItem>
+              <h3>Flappy Bird Hockey Clone</h3>
+              <h6>
+                Flappy Bird... but hockey! The player avoids goal posts by
+                tapping the screen at the right time to jump through them.
+              </h6>{" "}
+            </SchoolItem>
+            <SchoolItem>
+              <h3>The Insult App 2</h3>
+              <h6>Sequel to The Insult App on the IOS App Store.</h6>
+            </SchoolItem>
+            <SchoolItem>
+              <h3>Hockey Techniques Landing Page</h3>
               <h6>Description</h6>
-            </LargeItem>
-            <LargeItem>
-              <h3>App 3</h3>
-              <h6>Description</h6>
-            </LargeItem>
+            </SchoolItem>
           </div>
         </Details>
         <br />
