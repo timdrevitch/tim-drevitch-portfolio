@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/tim-drevitch-portfolio/static/css/main.d3a521dd.css",
-    "main.js": "/tim-drevitch-portfolio/static/js/main.58b54742.js",
-    "static/media/tim_drevitch_resume.png": "/tim-drevitch-portfolio/static/media/tim_drevitch_resume.fee1ef8ab584a975cfaf.png",
-    "static/media/wsu.png": "/tim-drevitch-portfolio/static/media/wsu.4be8dc8c700143a6996d.png",
-    "static/media/wpi.png": "/tim-drevitch-portfolio/static/media/wpi.e2ece70b93e0f0114ef9.png",
-    "static/media/contactme.png": "/tim-drevitch-portfolio/static/media/contactme.8219f6c3c410137a2c76.png",
-    "static/media/tdnavlogo.png": "/tim-drevitch-portfolio/static/media/tdnavlogo.ffae68a8304c7a826ddf.png",
-    "static/media/axios.png": "/tim-drevitch-portfolio/static/media/axios.0738a6f2a78ea9e6251b.png",
-    "static/media/styledcomponents.png": "/tim-drevitch-portfolio/static/media/styledcomponents.f339b2d4eb9e1868b700.png",
-    "index.html": "/tim-drevitch-portfolio/index.html",
-    "main.d3a521dd.css.map": "/tim-drevitch-portfolio/static/css/main.d3a521dd.css.map",
-    "main.58b54742.js.map": "/tim-drevitch-portfolio/static/js/main.58b54742.js.map"
+    "main.css": "/static/css/main.d3a521dd.css",
+    "main.js": "/static/js/main.2197fd71.js",
+    "static/media/tim_drevitch_resume.png": "/static/media/tim_drevitch_resume.fee1ef8ab584a975cfaf.png",
+    "static/media/wsu.png": "/static/media/wsu.4be8dc8c700143a6996d.png",
+    "static/media/wpi.png": "/static/media/wpi.e2ece70b93e0f0114ef9.png",
+    "static/media/contactme.png": "/static/media/contactme.8219f6c3c410137a2c76.png",
+    "static/media/tdnavlogo.png": "/static/media/tdnavlogo.ffae68a8304c7a826ddf.png",
+    "static/media/axios.png": "/static/media/axios.0738a6f2a78ea9e6251b.png",
+    "static/media/styledcomponents.png": "/static/media/styledcomponents.f339b2d4eb9e1868b700.png",
+    "index.html": "/index.html",
+    "main.d3a521dd.css.map": "/static/css/main.d3a521dd.css.map",
+    "main.2197fd71.js.map": "/static/js/main.2197fd71.js.map"
   },
   "entrypoints": [
     "static/css/main.d3a521dd.css",
-    "static/js/main.58b54742.js"
+    "static/js/main.2197fd71.js"
   ]
 }
