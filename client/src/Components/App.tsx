@@ -11,9 +11,9 @@ const App: FC = (): JSX.Element => {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/tim-drevitch-portfolio/" element={<Home />} />
-        <Route path="/tim-drevitch-portfolio/resume" element={<Resume />} />
-        <Route path="/tim-drevitch-portfolio/contact" element={<Contact />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </Router>
