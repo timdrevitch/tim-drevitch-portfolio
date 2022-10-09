@@ -157,7 +157,7 @@ const Home: FC = (): JSX.Element => {
             <LargeItem>
               <div style={{ width: "100%", textAlign: "center" }}>
                 <SchoolIcon
-                  src={require("../Assets/wsu.png")}
+                  src={require("../Assets/website.png")}
                   alt="TimDrevitch"
                 />
               </div>
@@ -170,12 +170,12 @@ const Home: FC = (): JSX.Element => {
               >
                 Websites
               </h3>
-              <h6>Front-End-Only Websites (like this one)</h6>
+              <h6>Static Serverless Websites (like this one)</h6>
             </LargeItem>
             <LargeItem>
               <div style={{ width: "100%", textAlign: "center" }}>
                 <SchoolIcon
-                  src={require("../Assets/wsu.png")}
+                  src={require("../Assets/webapp.png")}
                   alt="TimDrevitch"
                 />
               </div>
@@ -197,7 +197,7 @@ const Home: FC = (): JSX.Element => {
             <LargeItem>
               <div style={{ width: "100%", textAlign: "center" }}>
                 <SchoolIcon
-                  src={require("../Assets/wsu.png")}
+                  src={require("../Assets/appstore.png")}
                   alt="TimDrevitch"
                 />
               </div>
@@ -217,7 +217,7 @@ const Home: FC = (): JSX.Element => {
             <LargeItem>
               <div style={{ width: "100%", textAlign: "center" }}>
                 <SchoolIcon
-                  src={require("../Assets/wsu.png")}
+                  src={require("../Assets/controller.png")}
                   alt="TimDrevitch"
                 />
               </div>
@@ -236,7 +236,7 @@ const Home: FC = (): JSX.Element => {
             <LargeItem>
               <div style={{ width: "100%", textAlign: "center" }}>
                 <SchoolIcon
-                  src={require("../Assets/wsu.png")}
+                  src={require("../Assets/git.png")}
                   alt="TimDrevitch"
                 />
               </div>
@@ -255,7 +255,7 @@ const Home: FC = (): JSX.Element => {
             <LargeItem>
               <div style={{ width: "100%", textAlign: "center" }}>
                 <SchoolIcon
-                  src={require("../Assets/wsu.png")}
+                  src={require("../Assets/api.png")}
                   alt="TimDrevitch"
                 />
               </div>
@@ -275,7 +275,7 @@ const Home: FC = (): JSX.Element => {
             <LargeItem>
               <div style={{ width: "100%", textAlign: "center" }}>
                 <SchoolIcon
-                  src={require("../Assets/wsu.png")}
+                  src={require("../Assets/agile.png")}
                   alt="TimDrevitch"
                 />
               </div>
@@ -289,6 +289,8 @@ const Home: FC = (): JSX.Element => {
                 Agile Sprints
               </h3>
               <h6>Kanban / Scrum</h6>
+              <h6 style={{ marginTop: "-1rem" }}>Weight stystems</h6>
+              <h6 style={{ marginTop: "-1rem" }}>Sprint analytics</h6>
             </LargeItem>
           </div>
         </Details>
@@ -818,6 +820,23 @@ const Home: FC = (): JSX.Element => {
                 <Description>Bash / Shell</Description>
               </IconContainer>
             </SmallItem>
+            <SmallItem>
+              <IconContainer>
+                <TechIcon
+                  src={require("../Assets/c++.png")}
+                  alt="TimDrevitch"
+                />
+                {/* <a target="_blank" rel="noreferrer" href="https://icons8.com/icon/40669/c++">C++</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */}
+                <Description>C++</Description>
+              </IconContainer>
+            </SmallItem>
+            <SmallItem>
+              <IconContainer>
+                <TechIcon src={require("../Assets/c#.png")} alt="TimDrevitch" />
+                {/* <a target="_blank" rel="noreferrer" href="https://icons8.com/icon/45490/c-sharp-logo-2">C Sharp Logo 2</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */}
+                <Description>C#</Description>
+              </IconContainer>
+            </SmallItem>
           </div>
         </Details>
         <br />
@@ -856,12 +875,21 @@ const Home: FC = (): JSX.Element => {
                 </h3>
                 <ReactPlayer
                   width="100%"
-                  center="center"
-                  aspectRatio="scale"
+                  height="200px"
                   controls
                   url="https://youtu.be/p8AJAcoDnH8"
                 />
-                <h6 style={{ marginTop: "4rem" }}>
+                <img
+                  src={require("../Assets/laptopphonetodo.png")}
+                  alt="Axios"
+                  style={{
+                    verticalAlign: "top",
+                    display: "block",
+                    margin: "1px auto",
+                    width: "85%",
+                  }}
+                />
+                <h6 style={{ marginTop: "-3.5rem" }}>
                   This <span style={{ color: "#d68b52" }}>full stack</span> web
                   application allows users to perform the four most common CRUD
                   operations: Create, Read, Update, and Delete. This is my own
@@ -1044,11 +1072,21 @@ const Home: FC = (): JSX.Element => {
                 </h3>
                 <ReactPlayer
                   width="100%"
-                  border="3px solid #d68b52"
+                  height="200px"
                   controls
                   url="https://youtu.be/UlhVoZHbtq0"
                 />
-                <h6 style={{ marginTop: "4rem" }}>
+                <img
+                  src={require("../Assets/laptopphoneloan.png")}
+                  alt="Axios"
+                  style={{
+                    verticalAlign: "top",
+                    display: "block",
+                    margin: "1px auto",
+                    width: "85%",
+                  }}
+                />
+                <h6 style={{ marginTop: "-3.5rem" }}>
                   This <span style={{ color: "#d68b52" }}>full stack</span> web
                   application allows users to enter information about their
                   current student loans. Once entered, the program will do many
@@ -1240,20 +1278,130 @@ const Home: FC = (): JSX.Element => {
             }}
           >
             <SchoolItem>
-              <h3>Flappy Bird Hockey Clone</h3>
-              <h6>
-                Flappy Bird... but hockey! The player avoids goal posts by
-                tapping the screen at the right time to jump through them.
-              </h6>{" "}
+              <div>
+                <h3 style={{ color: "#d68b52", float: "left" }}>
+                  Flappy Bird Hockey Clone
+                </h3>
+                <h3 style={{ float: "right" }}>
+                  <abbr title="View this repository on GitHub">
+                    <a
+                      href="https://github.com/timdrevitch/flappy-drev-game"
+                      target="_blank"
+                      rel="noreferrer"
+                      style={{ color: "#F7C59F" }}
+                    >
+                      <AiFillGithub />
+                    </a>
+                  </abbr>
+                </h3>
+                <ReactPlayer
+                  width="100%"
+                  height="200px"
+                  controls
+                  url="https://youtu.be/2kZ7EyEjaXU"
+                />
+                <h6 style={{ marginTop: "4rem" }}>
+                  This IOS native application is a Flappy Bird clone. Flappy
+                  Bird... but hockey! The player avoids goal posts by tapping
+                  the screen at the right time to jump through them. I used
+                  Inkscape, ZBrush, Photoshop, Illustrator, Blendr, Unity, and
+                  Xcode to build this game. I even set up a custom controller
+                  for this game using a Makey-Makey kit that allows the player
+                  to jump simply by closing and opening their hand with a glove
+                  on.
+                </h6>
+                <h6>
+                  Technology Used:
+                  <p style={{ textAlign: "left" }}>
+                    <img
+                      src={require("../Assets/unity.png")}
+                      alt="Unity"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/xcode.png")}
+                      alt="Xcode"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/git.png")}
+                      alt="Git"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/github.png")}
+                      alt="GitHub"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                  </p>
+                </h6>
+                <h6 style={{ marginTop: "-1rem" }}>
+                  Languages Used:
+                  <p style={{ textAlign: "left" }}>
+                    <img
+                      src={require("../Assets/c++.png")}
+                      alt="React"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/c#.png")}
+                      alt="React"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/swift.png")}
+                      alt="Swift"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/jsonbson.png")}
+                      alt="JSON/BSON"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                  </p>
+                </h6>
+              </div>
             </SchoolItem>
-            <SchoolItem>
+            {/* <SchoolItem>
               <h3>The Insult App 2</h3>
               <h6>Sequel to The Insult App on the IOS App Store.</h6>
             </SchoolItem>
             <SchoolItem>
               <h3>Hockey Techniques Landing Page</h3>
               <h6>Description</h6>
-            </SchoolItem>
+            </SchoolItem> */}
           </div>
         </Details>
         <br />

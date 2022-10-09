@@ -23,19 +23,13 @@ const Navbar: FC = (): JSX.Element => {
             verticalAlign: "middle",
           }}
         >
-          <NavigationButton
-            onClick={() => navigate("/tim-drevitch-portfolio/")}
-          >
+          <NavigationButton onClick={() => navigate("/")}>
             Home
           </NavigationButton>
-          <NavigationButton
-            onClick={() => navigate("/tim-drevitch-portfolio/resume")}
-          >
+          <NavigationButton onClick={() => navigate("/resume")}>
             Resume
           </NavigationButton>
-          <NavigationButton
-            onClick={() => navigate("/tim-drevitch-portfolio/contact")}
-          >
+          <NavigationButton onClick={() => navigate("/contact")}>
             Contact
           </NavigationButton>
         </div>
