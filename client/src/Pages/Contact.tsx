@@ -1,6 +1,18 @@
 import { FC, FormEvent, MutableRefObject, useRef, useState } from "react"
 import emailjs from "@emailjs/browser"
 import { MainContentContainer, WebsiteContainer } from "../Styles/HomeStyles"
+import { BsLink45Deg } from "react-icons/bs"
+import {
+  EmailForm,
+  LargeInput,
+  LeftSection,
+  SmallInput,
+  SmallInputContainer,
+  ContactList,
+  ListItem,
+  LinkItem,
+  SubmitButton,
+} from "../Styles/ContactStyles"
 
 const Contact: FC = (): JSX.Element => {
   const form: MutableRefObject<any> = useRef()
@@ -29,83 +41,103 @@ const Contact: FC = (): JSX.Element => {
   return (
     <WebsiteContainer>
       <MainContentContainer>
-        <img
-          style={{ width: "40%", display: "block", margin: "0 auto" }}
-          src={require("../Assets/contactme.png")}
-          alt="TimDrevitch"
-        />
+        <br />
+        <br />
+        <br />
+        <h1
+          style={{
+            margin: "-2.5rem 0 3rem 0",
+            fontSize: "42px",
+            paddingBottom: "3rem",
+            borderBottom: "1px solid #d68b52",
+          }}
+        >
+          Get in touch with me
+        </h1>
+        <h3>Contact:</h3>
+        <ContactList>
+          <ListItem>
+            Email:{" "}
+            <span style={{ color: "#d68b52" }}>timdrevitch@gmail.com</span>
+          </ListItem>
+          <ListItem>
+            LinkedIn:{" "}
+            <LinkItem
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.linkedin.com/in/tim-drevitch-43016719b"
+            >
+              <BsLink45Deg />
+              <em>View Profile</em>
+            </LinkItem>
+          </ListItem>
+          <ListItem>
+            GitHub:{" "}
+            <LinkItem
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/timdrevitch"
+            >
+              <BsLink45Deg />
+              <em>View Profile</em>
+            </LinkItem>
+          </ListItem>
+          <ListItem>
+            Twitter:{" "}
+            <LinkItem
+              target="_blank"
+              rel="noreferrer"
+              href="https://twitter.com/TimDrevitchDev"
+            >
+              <BsLink45Deg />
+              <em>View Profile</em>
+            </LinkItem>
+          </ListItem>
+        </ContactList>
         {!ifEmailSent ? (
           <>
-            <h3
+            <h1
               style={{
-                color: "#d68b52",
+                margin: "-.01rem 0 2rem 0",
+                fontSize: "42px",
+                paddingBottom: "3rem",
+                borderBottom: "1px solid #d68b52",
               }}
             >
-              Send me an email from here!
-            </h3>
+              {/* Get in touch with me */}
+            </h1>
+            <h3>Or, send me an email from here:</h3>
             <div
               style={{
                 width: "100%",
                 display: "flex",
               }}
             >
-              <form style={{ width: "100%" }} ref={form} onSubmit={sendEmail}>
-                <div style={{ width: "50%", float: "left" }}>
-                  <div
-                    style={{
-                      width: "100%",
-                      height: "4rem",
-                    }}
-                  >
+              <EmailForm ref={form} onSubmit={sendEmail}>
+                <LeftSection>
+                  <SmallInputContainer>
                     <label>
                       Name: <br />
-                      <input
-                        style={{
-                          width: "95%",
-                          height: "2rem",
-                          background: "black",
-                          color: "#F7C59F",
-                          borderRadius: "5px",
-                          borderColor: "#d68b52",
-                          borderStyle: "solid",
-                          marginTop: "5px",
-                          marginBottom: "5px",
-                        }}
-                        placeholder="Please enter your full name..."
+                      <SmallInput
+                        placeholder="Enter your full name..."
                         type="text"
                         name="user_name"
                         required
                       />
                     </label>
-                  </div>
-                  <div
-                    style={{
-                      width: "100%",
-                      height: "4rem",
-                    }}
-                  >
+                  </SmallInputContainer>
+                  <SmallInputContainer>
                     <label>
                       Email: <br />
-                      <input
-                        style={{
-                          width: "95%",
-                          height: "2rem",
-                          background: "black",
-                          color: "#F7C59F",
-                          borderRadius: "5px",
-                          borderColor: "#d68b52",
-                          borderStyle: "solid",
-                          marginTop: "5px",
-                          marginBottom: "5px",
-                        }}
-                        placeholder="Please enter your email address..."
+                      <SmallInput
+                        placeholder="Enter your email address..."
                         type="email"
                         name="user_email"
                         required
                       />
                     </label>
-                  </div>
-                </div>
+                  </SmallInputContainer>
+                </LeftSection>
                 <div style={{ width: "50%", float: "right" }}>
                   <div
                     style={{
@@ -114,48 +146,49 @@ const Contact: FC = (): JSX.Element => {
                     }}
                   >
                     <label>
-                      Message <br />
-                      <textarea
-                        style={{
-                          width: "100%",
-                          height: "6rem",
-                          background: "black",
-                          color: "#F7C59F",
-                          borderRadius: "5px",
-                          borderColor: "#d68b52",
-                          borderStyle: "solid",
-                          maxWidth: "100%",
-                          resize: "none",
-                          marginTop: "5px",
-                          marginBottom: "5px",
-                        }}
-                        placeholder="Please enter your message..."
+                      Message: <br />
+                      <LargeInput
+                        placeholder="Enter your message..."
                         name="message"
                         required
                       />
                     </label>
                   </div>
                 </div>
-                <input
-                  style={{
-                    width: "100%",
-                    background: "#F7C59F",
-                    borderColor: "#d68b52",
-                    borderRadius: "5px",
-                    cursor: "pointer",
-                    height: "4rem",
-                    color: "#995b2b",
-                    marginTop: "1rem",
-                  }}
-                  type="submit"
-                  value="Send"
-                />
-              </form>
+                <SubmitButton type="submit" value="Send" />
+                <br />
+                <br />
+              </EmailForm>
             </div>
+            <br />
             <br />
           </>
         ) : (
-          <div>Thank you for your message!</div>
+          <>
+            <h1
+              style={{
+                margin: "-.01rem 0 2rem 0",
+                fontSize: "42px",
+                paddingBottom: "3rem",
+                borderBottom: "1px solid #d68b52",
+              }}
+            >
+              {/* Get in touch with me */}
+            </h1>
+            <div
+              style={{
+                textAlign: "center",
+                fontSize: "42px",
+                background: "rgba(255, 255, 255, 0.11)",
+                padding: "1rem",
+                borderRadius: "10px",
+              }}
+            >
+              Thank you for your message!
+            </div>
+            <br />
+            <br />
+          </>
         )}
       </MainContentContainer>
     </WebsiteContainer>

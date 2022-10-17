@@ -37,16 +37,16 @@ const SocialMedia: FC = (): JSX.Element => {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://twitter.com/TimDrevitchDev"
+            href="https://github.com/timdrevitch"
           >
-            <AiFillTwitterCircle color={siteColor} style={btnStyle} />
+            <AiFillGithub color={siteColor} style={btnStyle} />
           </a>{" "}
           {/* <SMButton
             onClick={() => {
-              window.location.href = "https://twitter.com/TimDrevitchDev"
+              window.location.href = "https://github.com/timdrevitch"
             }}
           >
-            <AiFillTwitterCircle color={siteColor} style={btnStyle} />
+            <AiFillGithub color={siteColor} style={btnStyle} />
           </SMButton> */}
         </SMListItem>
         <SMListItem>
@@ -70,16 +70,16 @@ const SocialMedia: FC = (): JSX.Element => {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://github.com/timdrevitch"
+            href="https://twitter.com/TimDrevitchDev"
           >
-            <AiFillGithub color={siteColor} style={btnStyle} />
+            <AiFillTwitterCircle color={siteColor} style={btnStyle} />
           </a>{" "}
           {/* <SMButton
             onClick={() => {
-              window.location.href = "https://github.com/timdrevitch"
+              window.location.href = "https://twitter.com/TimDrevitchDev"
             }}
           >
-            <AiFillGithub color={siteColor} style={btnStyle} />
+            <AiFillTwitterCircle color={siteColor} style={btnStyle} />
           </SMButton> */}
         </SMListItem>
       </SMListSection>
