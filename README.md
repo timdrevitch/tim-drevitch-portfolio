@@ -3,7 +3,7 @@
 <div align="center">
   
 <a href="https://github.com/timdrevitch/tim-drevitch-portfolio/graphs/contributors">![GitHub contributors](https://img.shields.io/github/contributors/timdrevitch/tim-drevitch-portfolio)</a>
-<a href="https://github.com/timdrevitch/tim-drevitch-portfolio/issues">![GitHub issues](https://img.shields.io/github/issues-raw/timdrevitch/data-collection-ethics-game)</a>
+<a href="https://github.com/timdrevitch/tim-drevitch-portfolio/issues">![GitHub issues](https://img.shields.io/github/issues-raw/timdrevitch/tim-drevitch-portfolio)</a>
 <a href="https://github.com/timdrevitch/tim-drevitch-portfolio/issues?q=is%3Aissue+is%3Aclosed">![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/timdrevitch/tim-drevitch-portfolio)</a>
 <a href="https://github.com/timdrevitch/tim-drevitch-portfolio/pulls">![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/timdrevitch/tim-drevitch-portfolio)</a>
 <a href="https://github.com/timdrevitch/tim-drevitch-portfolio/pulls?q=is%3Apr+is%3Aclosed">![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed-raw/timdrevitch/tim-drevitch-portfolio)</a>
