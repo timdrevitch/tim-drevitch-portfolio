@@ -1,8 +1,8 @@
-import { FC } from "react"
-import SocialMedia from "../Components/SocialMedia"
-import ReactPlayer from "react-player"
-// import { BsInfoCircleFill } from "react-icons/bs"
-import { AiFillGithub } from "react-icons/ai"
+import { FC } from "react";
+import SocialMedia from "../Components/SocialMedia";
+import ReactPlayer from "react-player";
+import { FaLink } from "react-icons/fa";
+import { AiFillGithub } from "react-icons/ai";
 import {
   Description,
   Details,
@@ -14,7 +14,7 @@ import {
   SmallItem,
   TechIcon,
   WebsiteContainer,
-} from "../Styles/HomeStyles"
+} from "../Styles/HomeStyles";
 
 const Home: FC = (): JSX.Element => {
   //   const middle: CSSProperties = { verticalAlign: "middle" }
@@ -49,6 +49,47 @@ const Home: FC = (): JSX.Element => {
               justifyContent: "center",
             }}
           >
+            <SchoolItem>
+              <div style={{ width: "100%", textAlign: "center" }}>
+                <SchoolIcon
+                  src={require("../Assets/wpi.png")}
+                  alt="TimDrevitch"
+                />
+              </div>
+              <h3
+                style={{
+                  marginTop: "-.75rem",
+                  color: "#d68b52",
+                  textAlign: "center",
+                }}
+              >
+                Worcester Polytechnic Institute
+              </h3>
+              <h6 style={{ textAlign: "center" }}>Master's Degree (MS)</h6>
+              <h6 style={{ marginTop: "-1rem" }}>
+                Major: <em>Interactive Media (Game Development)</em>
+              </h6>
+              <h6 style={{ marginTop: "-1rem" }}>
+                Thesis: <em>Smart City Data Ethics</em>
+              </h6>
+              <h6 style={{ marginTop: "-1rem" }}>
+                Accolades:{" "}
+                <em>
+                  <ul>
+                    <li>3.9/4.00 GPA</li>
+                  </ul>
+                </em>
+              </h6>
+              <h6 style={{ marginTop: "-1rem" }}>
+                Activities:{" "}
+                <em>
+                  <ul>
+                    <li>ACHA Men's Ice Hockey Team</li>
+                    <li>ACHA First Team All-Conference</li>
+                  </ul>
+                </em>
+              </h6>
+            </SchoolItem>
             <SchoolItem>
               <div style={{ width: "100%", textAlign: "center" }}>
                 <SchoolIcon
@@ -91,46 +132,6 @@ const Home: FC = (): JSX.Element => {
                     <li>NCAA Men's Ice Hockey Team</li>
                     <li>MASCAC Rookie of the Week (x3)</li>
                     <li>WSU All-Sports Rookie of the Year (2017-18)</li>
-                  </ul>
-                </em>
-              </h6>
-            </SchoolItem>
-            <SchoolItem>
-              <div style={{ width: "100%", textAlign: "center" }}>
-                <SchoolIcon
-                  src={require("../Assets/wpi.png")}
-                  alt="TimDrevitch"
-                />
-              </div>
-              <h3
-                style={{
-                  marginTop: "-.75rem",
-                  color: "#d68b52",
-                  textAlign: "center",
-                }}
-              >
-                Worcester Polytechnic Institute
-              </h3>
-              <h6 style={{ textAlign: "center" }}>Master's Degree (MS)</h6>
-              <h6 style={{ marginTop: "-1rem" }}>
-                Major: <em>Interactive Media (Game Development)</em>
-              </h6>
-              <h6 style={{ marginTop: "-1rem" }}>
-                Thesis: <em>Smart City Data Ethics</em>
-              </h6>
-              <h6 style={{ marginTop: "-1rem" }}>
-                Accolades:{" "}
-                <em>
-                  <ul>
-                    <li>3.9/4.00 GPA</li>
-                  </ul>
-                </em>
-              </h6>
-              <h6 style={{ marginTop: "-1rem" }}>
-                Activities:{" "}
-                <em>
-                  <ul>
-                    <li>ACHA Men's Ice Hockey Team</li>
                   </ul>
                 </em>
               </h6>
@@ -859,6 +860,249 @@ const Home: FC = (): JSX.Element => {
             <SchoolItem>
               <div>
                 <h3 style={{ color: "#d68b52", float: "left" }}>
+                  Dystocity: Job Hunt
+                </h3>
+                <h3 style={{ float: "right" }}>
+                  <abbr title="Visit this project in a new tab">
+                    <a
+                      href="https://data-ethics-game.herokuapp.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                      style={{ color: "#F7C59F" }}
+                    >
+                      <FaLink />
+                    </a>
+                  </abbr>
+                  <span> </span>
+                  <abbr title="View this repository on GitHub">
+                    <a
+                      href="https://github.com/timdrevitch/data-collection-ethics-game"
+                      target="_blank"
+                      rel="noreferrer"
+                      style={{ color: "#F7C59F" }}
+                    >
+                      <AiFillGithub />
+                    </a>
+                  </abbr>
+                </h3>
+                <ReactPlayer
+                  width="100%"
+                  height="200px"
+                  controls
+                  url="https://www.youtube.com/watch?v=oy7225auibI"
+                />
+                <img
+                  src={require("../Assets/laptopphonethesis.png")}
+                  alt="Axios"
+                  style={{
+                    verticalAlign: "top",
+                    display: "block",
+                    margin: "1px auto",
+                    width: "85%",
+                  }}
+                />
+                <h6 style={{ marginTop: "-3.5rem" }}>
+                  <span style={{ color: "#d68b52" }}>Description:</span>
+                  <br />
+                  <br /> This{" "}
+                  <span style={{ color: "#d68b52" }}>full stack</span> web
+                  application was created to be an{" "}
+                  <span style={{ color: "#d68b52" }}>
+                    interactive experience
+                  </span>{" "}
+                  where the player can make selections along the way that alter
+                  how the game's story pans out and what ending they will get
+                  (Like <em>Bandersnatch</em> or a choose your own adventure
+                  story). It aims to teach players about the real life issues
+                  surrounding data collection and data sharing in the modern
+                  world. This game saves player stats and where they are in a
+                  specific playthrough (meaning, the player could leave the game
+                  or the website entirely without losing their progress in the
+                  playthrough). It also has other features like a world wide
+                  leaderboard and minimal player customization. The log in/sign
+                  up system takes advantage of Google Oauth2 and GCP's API so
+                  that player passwords never need to be saved. It is hosted
+                  through Heroku{" "}
+                  <a
+                    href="https://data-ethics-game.herokuapp.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{ color: "#d68b52" }}
+                  >
+                    here
+                  </a>{" "}
+                  for anyone to check out and play! Although this project is for
+                  my graduate degree thesis, I have plans to continue working on
+                  it more!
+                </h6>
+                <h6>
+                  <span style={{ color: "#d68b52" }}>Technology Used:</span>
+                  <p style={{ textAlign: "left" }}>
+                    <img
+                      src={require("../Assets/react.png")}
+                      alt="React"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/node.png")}
+                      alt="Node"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/express.png")}
+                      alt="Express"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/mongodb.png")}
+                      alt="MongoDB"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/axios.png")}
+                      alt="Axios"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/styledcomponents.png")}
+                      alt="styled-components"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/git.png")}
+                      alt="Git"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/github.png")}
+                      alt="GitHub"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/insomnia.png")}
+                      alt="Insomnia"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/npm.png")}
+                      alt="NPM"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/vscode.png")}
+                      alt="VSCode"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/heroku.png")}
+                      alt="Heroku"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                  </p>
+                </h6>
+                <h6 style={{ marginTop: "-1rem" }}>
+                  <span style={{ color: "#d68b52" }}>Languages Used:</span>
+                  <p style={{ textAlign: "left" }}>
+                    <img
+                      src={require("../Assets/html.png")}
+                      alt="html"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/css.png")}
+                      alt="css"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/javascript.png")}
+                      alt="javascript"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/typescript.png")}
+                      alt="typescript"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                    <img
+                      src={require("../Assets/jsonbson.png")}
+                      alt="jsonbson"
+                      style={{
+                        verticalAlign: "top",
+                        margin: "4px",
+                        width: "6%",
+                      }}
+                    />
+                  </p>
+                </h6>
+              </div>
+            </SchoolItem>
+            <SchoolItem>
+              <div>
+                <h3 style={{ color: "#d68b52", float: "left" }}>
                   Classic Todo List App
                 </h3>
                 <h3 style={{ float: "right" }}>
@@ -890,6 +1134,9 @@ const Home: FC = (): JSX.Element => {
                   }}
                 />
                 <h6 style={{ marginTop: "-3.5rem" }}>
+                  <span style={{ color: "#d68b52" }}>Description:</span>
+                  <br />
+                  <br />
                   This <span style={{ color: "#d68b52" }}>full stack</span> web
                   application allows users to perform the four most common CRUD
                   operations: Create, Read, Update, and Delete. This is my own
@@ -898,7 +1145,7 @@ const Home: FC = (): JSX.Element => {
                   development.
                 </h6>
                 <h6>
-                  Technology Used:
+                  <span style={{ color: "#d68b52" }}>Technology Used:</span>
                   <p style={{ textAlign: "left" }}>
                     <img
                       src={require("../Assets/react.png")}
@@ -1002,7 +1249,7 @@ const Home: FC = (): JSX.Element => {
                   </p>
                 </h6>
                 <h6 style={{ marginTop: "-1rem" }}>
-                  Languages Used:
+                  <span style={{ color: "#d68b52" }}>Languages Used:</span>
                   <p style={{ textAlign: "left" }}>
                     <img
                       src={require("../Assets/html.png")}
@@ -1087,6 +1334,9 @@ const Home: FC = (): JSX.Element => {
                   }}
                 />
                 <h6 style={{ marginTop: "-3.5rem" }}>
+                  <span style={{ color: "#d68b52" }}>Description:</span>
+                  <br />
+                  <br />
                   This <span style={{ color: "#d68b52" }}>full stack</span> web
                   application allows users to enter information about their
                   current student loans. Once entered, the program will do many
@@ -1095,7 +1345,7 @@ const Home: FC = (): JSX.Element => {
                   every month, and how much it accrues every day.
                 </h6>
                 <h6>
-                  Technology Used:
+                  <span style={{ color: "#d68b52" }}>Technology Used:</span>
                   <p style={{ textAlign: "left" }}>
                     <img
                       src={require("../Assets/react.png")}
@@ -1199,7 +1449,7 @@ const Home: FC = (): JSX.Element => {
                   </p>
                 </h6>
                 <h6 style={{ marginTop: "-1rem" }}>
-                  Languages Used:
+                  <span style={{ color: "#d68b52" }}>Languages Used:</span>
                   <p style={{ textAlign: "left" }}>
                     <img
                       src={require("../Assets/html.png")}
@@ -1301,6 +1551,9 @@ const Home: FC = (): JSX.Element => {
                   url="https://youtu.be/2kZ7EyEjaXU"
                 />
                 <h6 style={{ marginTop: "4rem" }}>
+                  <span style={{ color: "#d68b52" }}>Description:</span>
+                  <br />
+                  <br />
                   This IOS native application is a Flappy Bird clone. Flappy
                   Bird... but hockey! The player avoids goal posts by tapping
                   the screen at the right time to jump through them. I used
@@ -1311,7 +1564,7 @@ const Home: FC = (): JSX.Element => {
                   on.
                 </h6>
                 <h6>
-                  Technology Used:
+                  <span style={{ color: "#d68b52" }}>Technology Used:</span>
                   <p style={{ textAlign: "left" }}>
                     <img
                       src={require("../Assets/unity.png")}
@@ -1352,7 +1605,7 @@ const Home: FC = (): JSX.Element => {
                   </p>
                 </h6>
                 <h6 style={{ marginTop: "-1rem" }}>
-                  Languages Used:
+                  <span style={{ color: "#d68b52" }}>Languages Used:</span>
                   <p style={{ textAlign: "left" }}>
                     <img
                       src={require("../Assets/c++.png")}
@@ -1409,7 +1662,7 @@ const Home: FC = (): JSX.Element => {
         <br />
       </MainContentContainer>
     </WebsiteContainer>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
