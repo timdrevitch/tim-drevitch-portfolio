@@ -616,7 +616,6 @@ const Home: FC = (): JSX.Element => {
                   src={require("../Assets/electron.png")}
                   alt="TimDrevitch"
                 />
-                {/* <a target="_blank" rel="noreferrer" href="https://icons8.com/icon/34886/gitlab">Gitlab</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */}
                 <Description>Electron</Description>
               </IconContainer>
             </SmallItem>
@@ -626,7 +625,6 @@ const Home: FC = (): JSX.Element => {
                   src={require("../Assets/wordpress.png")}
                   alt="TimDrevitch"
                 />
-                {/* <a target="_blank" rel="noreferrer" href="https://icons8.com/icon/34886/gitlab">Gitlab</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */}
                 <Description>WordPress</Description>
               </IconContainer>
             </SmallItem>
