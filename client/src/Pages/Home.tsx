@@ -290,7 +290,7 @@ const Home: FC = (): JSX.Element => {
                 Agile Sprints
               </h3>
               <h6>Kanban / Scrum</h6>
-              <h6 style={{ marginTop: "-1rem" }}>Weight stystems</h6>
+              <h6 style={{ marginTop: "-1rem" }}>Weight systems</h6>
               <h6 style={{ marginTop: "-1rem" }}>Sprint analytics</h6>
             </LargeItem>
           </div>
@@ -465,6 +465,15 @@ const Home: FC = (): JSX.Element => {
             <SmallItem>
               <IconContainer>
                 <TechIcon
+                  src={require("../Assets/vite.png")}
+                  alt="TimDrevitch"
+                />
+                <Description>Vite</Description>
+              </IconContainer>
+            </SmallItem>
+            <SmallItem>
+              <IconContainer>
+                <TechIcon
                   src={require("../Assets/styledcomponents.png")}
                   alt="TimDrevitch"
                 />
@@ -571,7 +580,6 @@ const Home: FC = (): JSX.Element => {
                 <Description>Git</Description>
               </IconContainer>
             </SmallItem>
-
             <SmallItem>
               <IconContainer>
                 <TechIcon
@@ -600,6 +608,26 @@ const Home: FC = (): JSX.Element => {
                 />
                 {/* <a target="_blank" rel="noreferrer" href="https://icons8.com/icon/34886/gitlab">Gitlab</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */}
                 <Description>GitLab</Description>
+              </IconContainer>
+            </SmallItem>
+            <SmallItem>
+              <IconContainer>
+                <TechIcon
+                  src={require("../Assets/electron.png")}
+                  alt="TimDrevitch"
+                />
+                {/* <a target="_blank" rel="noreferrer" href="https://icons8.com/icon/34886/gitlab">Gitlab</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */}
+                <Description>Electron</Description>
+              </IconContainer>
+            </SmallItem>
+            <SmallItem>
+              <IconContainer>
+                <TechIcon
+                  src={require("../Assets/wordpress.png")}
+                  alt="TimDrevitch"
+                />
+                {/* <a target="_blank" rel="noreferrer" href="https://icons8.com/icon/34886/gitlab">Gitlab</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */}
+                <Description>WordPress</Description>
               </IconContainer>
             </SmallItem>
           </div>
