@@ -1,5 +1,5 @@
-import { FC } from "react"
-import { MainContentContainer, WebsiteContainer } from "../Styles/HomeStyles"
+import { FC } from "react";
+import { MainContentContainer, WebsiteContainer } from "../Styles/HomeStyles";
 // import { Document, Page } from "react-pdf"
 
 const Resume: FC = (): JSX.Element => {
@@ -18,14 +18,14 @@ const Resume: FC = (): JSX.Element => {
         </h1>
         <img
           style={{ width: "100%", display: "block", margin: "0 auto" }}
-          src={require("../Assets/tim_drevitch_resume.png")}
+          src={require("../Assets/Tim_Drevitch_Resume_February2023.png")}
           alt="TimDrevitch"
         />
         <br />
         <br />
       </MainContentContainer>
     </WebsiteContainer>
-  )
-}
+  );
+};
 
-export default Resume
+export default Resume;
