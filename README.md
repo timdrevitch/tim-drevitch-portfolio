@@ -1,4 +1,4 @@
-# <div align="center">📂 Tim Drevitch Portfolio Website</div>
+# <div align="center">📂 Tim Drevitch Portfolio Website 📂</div>
 
 <div align="center">
   
