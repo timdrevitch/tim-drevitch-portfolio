@@ -18,7 +18,7 @@ const Resume: FC = (): JSX.Element => {
         </h1>
         <img
           style={{ width: "100%", display: "block", margin: "0 auto" }}
-          src={require("../Assets/Tim_Drevitch_Resume_February2023.png")}
+          src={require("../Assets/TimDrevitchResumeSept2023.png")}
           alt="TimDrevitch"
         />
         <br />
