@@ -1,15 +1,15 @@
-import { FC } from "react"
+import { FC } from "react";
 import {
   AiFillGithub,
   AiFillLinkedin,
   AiFillTwitterCircle,
-} from "react-icons/ai"
+} from "react-icons/ai";
 import {
   SMButton,
   SMContainer,
   SMListItem,
   SMListSection,
-} from "../Styles/SocialMediaStyles"
+} from "../Styles/SocialMediaStyles";
 
 const SocialMedia: FC = (): JSX.Element => {
   //inline styles
@@ -28,7 +28,7 @@ const SocialMedia: FC = (): JSX.Element => {
     height: "25px",
   }
 
-  const siteColor = "#b46d37"
+  const siteColor = "#b46d37";
 
   return (
     <SMContainer>
@@ -41,30 +41,15 @@ const SocialMedia: FC = (): JSX.Element => {
           >
             <AiFillGithub color={siteColor} style={btnStyle} />
           </a>{" "}
-          {/* <SMButton
-            onClick={() => {
-              window.location.href = "https://github.com/timdrevitch"
-            }}
-          >
-            <AiFillGithub color={siteColor} style={btnStyle} />
-          </SMButton> */}
         </SMListItem>
         <SMListItem>
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://www.linkedin.com/in/tim-drevitch-43016719b"
+            href="https://www.linkedin.com/in/tim-drevitch"
           >
             <AiFillLinkedin color={siteColor} style={btnStyleBox} />
           </a>{" "}
-          {/* <SMButton
-            onClick={() => {
-              window.location.href =
-                "https://www.linkedin.com/in/tim-drevitch-43016719b"
-            }}
-          >
-            <AiFillLinkedin color={siteColor} style={btnStyleBox} />
-          </SMButton> */}
         </SMListItem>
         <SMListItem>
           <a
@@ -74,17 +59,10 @@ const SocialMedia: FC = (): JSX.Element => {
           >
             <AiFillTwitterCircle color={siteColor} style={btnStyle} />
           </a>{" "}
-          {/* <SMButton
-            onClick={() => {
-              window.location.href = "https://twitter.com/TimDrevitchDev"
-            }}
-          >
-            <AiFillTwitterCircle color={siteColor} style={btnStyle} />
-          </SMButton> */}
         </SMListItem>
       </SMListSection>
     </SMContainer>
   )
-}
+};
 
-export default SocialMedia
+export default SocialMedia;
