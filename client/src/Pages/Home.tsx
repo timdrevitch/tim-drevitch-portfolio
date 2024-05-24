@@ -67,16 +67,16 @@ const Home: FC = (): JSX.Element => {
               </h3>
               <h6 style={{ textAlign: "center" }}>Master's Degree (MS)</h6>
               <h6 style={{ marginTop: "-1rem" }}>
-                Major: <em>Interactive Media (Game Development)</em>
+                Major: <em>Interactive Media (Software Development)</em>
               </h6>
               <h6 style={{ marginTop: "-1rem" }}>
-                Thesis: <em>Smart City Data Ethics</em>
+                Thesis: <em>UI/UX and Data Collection Ethics</em>
               </h6>
               <h6 style={{ marginTop: "-1rem" }}>
                 Accolades:{" "}
                 <em>
                   <ul>
-                    <li>3.9/4.00 GPA</li>
+                    <li>3.91/4.00 GPA</li>
                   </ul>
                 </em>
               </h6>
@@ -117,7 +117,7 @@ const Home: FC = (): JSX.Element => {
                 Accolades:{" "}
                 <em>
                   <ul>
-                    <li>3.5/4.00 GPA</li>
+                    <li>3.61/4.00 GPA</li>
                     <li>Dean's List (x3)</li>
                     <li>All-Academic Team (x8)</li>
                     <li>National College Honor Society</li>

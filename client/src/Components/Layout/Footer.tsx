@@ -11,14 +11,14 @@ const Footer: FC = (): JSX.Element => {
     <FooterContainer>
       <div>© All Rights Reserved {thisYear} Tim Drevitch</div>
       <SMListItem>
-        View the repository to this website{" "}
+        View the GitHub repository to this website{" "}
         <LinkItem
           target="_blank"
           rel="noreferrer"
           href="https://github.com/timdrevitch/tim-drevitch-portfolio"
         >
           here
-        </LinkItem>{" "}
+        </LinkItem>{"."}
       </SMListItem>
       <br />
       <br />
